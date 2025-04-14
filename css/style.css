@@ -187,29 +187,25 @@ header {
 }
 
 nav {
-  display: flex;
   width: 100%;
-}
-
-nav ul {
   display: flex;
   justify-content: space-around;
-  width: inherit;
-  list-style: none;
 }
 
-nav ul li {
-  padding: 10px;
+nav div {
+  padding: 10px 0 10px 0;
+  text-align: center;
 }
-nav ul li * {
+nav div * {
   text-decoration: none;
   color: white;
   font-weight: bold;
   border: 1px solid transparent;
   transition: all 0.3s ease;
+  align-items: center;
 }
 
-nav ul li a:hover {
+nav div a:hover {
   border: 1px solid white;
   background-color: #222;
 }
