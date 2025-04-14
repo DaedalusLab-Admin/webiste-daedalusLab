@@ -157,17 +157,20 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: right;
+  width: 100%;
 }
 
 .branding h1 {
   margin: 0;
   font-size: 2em;
+  text-align: center;
 }
 
 .branding p {
   margin: 0;
   font-size: 1em;
+  text-align: center;
 }
 
 .branding img,
@@ -177,13 +180,14 @@ header {
 
 .language-picker {
   font-size: 0.8em;
+  float: right;
 }
 
 .navigation {
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid #444;
-  border-top: 2px solid #444;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
 }
 
 nav {
@@ -195,6 +199,7 @@ nav {
 nav div {
   padding: 10px 0 10px 0;
   text-align: center;
+  width: 100%;
 }
 nav div * {
   text-decoration: none;
@@ -207,7 +212,7 @@ nav div * {
 
 nav div a:hover {
   border: 1px solid white;
-  background-color: #222;
+  background-color: #0f0f0f;
 }
 
 main {
