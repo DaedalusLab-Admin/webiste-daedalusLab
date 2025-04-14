@@ -1,0 +1,105 @@
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100; /* set font width to 100% */
+}
+
+body {
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+}
+
+header > * {
+  padding: 10px; /* TODO adjust*/
+}
+
+.branding {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.branding div {
+  text-align: center;
+}
+
+.branding h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.branding p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.branding img,
+.language-picker {
+  width: 4em;
+}
+
+.language-picker {
+  font-size: 0.8em;
+}
+
+.navigation {
+  width: 100%;
+  border-bottom: 2px solid #444;
+  border-top: 2px solid #444;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0 auto;
+  width: 80%;
+}
+
+nav ul li * {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  border: 1px solid white;
+  background-color: #222;
+}
+
+main {
+  padding: 40px;
+  background: url("grid-background.png") repeat;
+  background-size: contain;
+}
+
+main h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  border-top: 2px solid #444;
+  font-size: 0.9em;
+}
