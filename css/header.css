@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Branding container */
+.branding {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px 5px 10px;
+  background: #0f0f0f;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 15, 15, 1) 0%,
+    rgba(25, 25, 25, 1) 100%
+  );
+}
+
+/* Branding child divs */
+.branding > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Branding title and subtitle */
+.branding h1 {
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+}
+.branding p {
+  margin: 0;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Language navigation and logo */
+.lang-nav,
+.branding img {
+  width: 4em;
+}

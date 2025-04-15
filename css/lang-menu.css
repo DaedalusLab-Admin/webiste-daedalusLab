@@ -1,0 +1,65 @@
+/* Language dropdown menu */
+.lang-nav {
+  margin-left: auto; /* Align to the right */
+  cursor: pointer;
+  border: transparent;
+  background-color: transparent;
+}
+
+.selected-lang {
+  display: flex;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.lang-menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.lang-menu ul li {
+  padding: 4px 2px 2px 2px;
+}
+/* Dropdown menu behavior */
+.lang-menu ul {
+  display: none;
+  position: absolute;
+  top: 100%; /* Place below the .lang-menu */
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.lang-menu:hover ul {
+  display: block;
+}
+
+.lang-menu ul li:hover {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Flag icons for selected language and dropdown languages */
+.selected-lang:before,
+.lang-menu ul li a:before {
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px; /* Flag icon */
+  height: 22px; /* Flag icon */
+}
+.selected-lang:before {
+  background-image: url("/assets/flags/it.svg");
+}
+.lang-menu ul li a:before {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Flag icons */
+.en:before {
+  background-image: url("/assets/flags/en.svg");
+}
+.it:before {
+  background-image: url("/assets/flags/it.svg");
+}

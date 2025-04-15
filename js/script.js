@@ -1,7 +1,4 @@
-function asd() {
-  if (document.getElementById("asd").value == "") {
-    alert("Please enter a value");
-  } else {
-    alert("Value entered: " + document.getElementById("asd").value);
-  }
+function changeLanguage(language) {
+  console.log("Language changed to:", language);
+  // Add your language-switching logic here
 }
