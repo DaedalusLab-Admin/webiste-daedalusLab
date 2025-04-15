@@ -1,10 +1,5 @@
-header {
-  display: flex;
-  flex-direction: column;
-}
-
 /* Branding container */
-.branding {
+#branding {
   display: flex;
   justify-content: space-between;
   padding: 5px 10px 5px 10px;
@@ -17,7 +12,7 @@ header {
 }
 
 /* Branding child divs */
-.branding > div {
+#branding > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,12 +20,12 @@ header {
 }
 
 /* Branding title and subtitle */
-.branding h1 {
+#branding h1 {
   margin: 0;
   font-size: 2em;
   text-align: center;
 }
-.branding p {
+#branding p {
   margin: 0;
   font-size: 1em;
   text-align: center;
@@ -38,6 +33,6 @@ header {
 
 /* Language navigation and logo */
 .lang-nav,
-.branding img {
+#branding img {
   width: 4em;
 }

@@ -1,0 +1,15 @@
+#aboutUs {
+  padding: 40px;
+  background: url("grid-background.png") repeat;
+  background-size: contain;
+}
+
+#aboutUs h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#aboutUs p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}

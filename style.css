@@ -1,0 +1,33 @@
+/* Importing CSS files for different sections */
+@import url("css/utils/reset.css"); /* Reset Browser Default CSS */
+@import url("css/header/branding.css");
+@import url("css/header/languages.css");
+@import url("css/header/navigation.css");
+@import url("css/aboutUs.css");
+@import url("css/services.css");
+@import url("css/certifications.css");
+@import url("css/researcchAndDevelopment.css");
+@import url("css/footer/footerBranding.css");
+@import url("css/footer/contactUs.css");
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100; /* set font width to 100% */
+  color: white;
+  background-color: #191919;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #444;
+  font-size: 0.9em;
+}
