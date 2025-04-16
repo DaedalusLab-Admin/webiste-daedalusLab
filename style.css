@@ -21,13 +21,53 @@ header {
 
 /* Body styles */
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Font settings */
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  font-variation-settings: "wdth" 100; /* set font width to 100% */
+  font-variation-settings: "wdth" 100;
   color: white;
   background-color: #191919;
+}
+
+main {
+  position: relative; /* Ensure pseudo-element is positioned relative to main */
+}
+
+/* Pseudo-element to place a gradient background image*/
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Add the background */
+  background-image: url("assets/grid.svg");
+  background-repeat: repeat;
+  background-size: contain;
+  /* Add a gradient mask to the background image */
+  mask-image: linear-gradient(to left, black 10%, transparent);
+  /* Place the image behind the text */
+  z-index: -1;
+}
+
+/* Main styles */
+main > section {
+  padding: 40px;
+}
+main > section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+main > section p {
+  font-size: 1.2em;
+  line-height: 1.6;
 }
 
 /* Footer styles */
@@ -36,5 +76,4 @@ footer {
   align-items: center;
   flex-direction: column;
   background-color: #0f0f0f;
-  font-size: 0.9em;
 }

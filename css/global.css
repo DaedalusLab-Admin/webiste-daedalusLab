@@ -11,3 +11,26 @@
 .logo-height-small {
   height: 3em;
 }
+
+/* Custom Divider */
+.custom-section-divider,
+.custom-section-divider-small {
+  background-color: white;
+  width: 100%;
+  margin: 5px;
+  padding: 0px;
+}
+.custom-section-divider {
+  height: 2px;
+}
+.custom-section-divider-small {
+  height: 1px;
+}
+
+.custom-element-divider {
+  background-color: #878787;
+  width: 90%;
+  margin: 5px auto;
+  padding: 0px;
+  height: 1px;
+}

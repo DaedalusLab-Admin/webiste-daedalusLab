@@ -2,7 +2,8 @@
 #footerBranding {
   display: flex;
   flex-direction: column;
-  width: 50%; /* Increase allow the text to go towards the right */
+  text-align: left;
+  width: 35%; /* Increase allow the text to go towards the right */
 }
 
 #footerBranding > div {
@@ -12,9 +13,5 @@
 
 #footerBranding h1,
 #footerBranding p {
-  text-align: left;
-}
-
-#footerBranding {
   text-align: left;
 }

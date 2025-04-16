@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <!-- Define the grid pattern -->
+        <pattern id="grid" width="2" height="2" patternUnits="userSpaceOnUse">
+            <!-- Horizontal line -->
+            <path d="M 0 0 H 5" stroke="#079d04" stroke-width="0.1" />
+            <!-- Vertical line -->
+            <path d="M 0 0 V 5" stroke="#079d04" stroke-width="0.1" />
+        </pattern>
+    </defs>
+
+    <!-- Apply the grid pattern -->
+    <rect width="100%" height="100%" fill="url(#grid)" />
+</svg>
