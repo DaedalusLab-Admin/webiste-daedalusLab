@@ -11,28 +11,28 @@
   );
 }
 
-/* Branding child divs */
-#branding > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
+/* Branding sizes */
+#branding h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+#branding p {
+  font-size: 1em;
 }
 
 /* Branding title and subtitle */
-#branding h1 {
-  margin: 0;
-  font-size: 2em;
-  text-align: center;
-}
-#branding p {
-  margin: 0;
-  font-size: 1em;
+#branding .name-tagline h1,
+#branding .name-tagline p {
   text-align: center;
 }
 
-/* Language navigation and logo */
-.lang-nav,
-#branding img {
-  width: 4em;
+/* name and tagline */
+.name-tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.name-tagline h1,
+.name-tagline p {
+  margin: 0;
 }

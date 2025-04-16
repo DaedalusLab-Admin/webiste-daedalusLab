@@ -23,4 +23,5 @@ loadHTML("services", "html/services.html");
 loadHTML("certifications", "html/certifications.html");
 loadHTML("researcchAndDevelopment", "html/esearcchAndDevelopment.html");
 loadHTML("footerBranding", "html/footer/footerBranding.html");
-loadHTML("aboutUs", "html/footer/aboutUs.html");
+loadHTML("contactUs", "html/footer/contactUs.html");
+loadHTML("subFooter", "html/footer/subFooter.html");

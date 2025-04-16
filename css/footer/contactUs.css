@@ -1,0 +1,10 @@
+/* Contact us */
+#contactUs {
+  text-align: left;
+  width: 30%; /* Increase to move the section to the left */
+}
+
+.footer-header {
+  display: flex;
+  align-items: center;
+}

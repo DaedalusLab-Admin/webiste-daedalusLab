@@ -1,0 +1,20 @@
+/* Footer branding */
+#footerBranding {
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* Increase allow the text to go towards the right */
+}
+
+#footerBranding > div {
+  display: flex;
+  justify-content: left;
+}
+
+#footerBranding h1,
+#footerBranding p {
+  text-align: left;
+}
+
+#footerBranding {
+  text-align: left;
+}

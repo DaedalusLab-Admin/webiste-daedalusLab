@@ -1,20 +1,25 @@
 /* Importing CSS files for different sections */
 @import url("css/utils/reset.css"); /* Reset Browser Default CSS */
+@import url("css/global.css");
 @import url("css/header/branding.css");
-@import url("css/header/languages.css");
+@import url("css/header/brandingLanguages.css");
 @import url("css/header/navigation.css");
 @import url("css/aboutUs.css");
 @import url("css/services.css");
 @import url("css/certifications.css");
 @import url("css/researcchAndDevelopment.css");
+@import url("css/footer/global.css");
 @import url("css/footer/footerBranding.css");
 @import url("css/footer/contactUs.css");
+@import url("css/footer/subfooter.css");
 
+/* Header styles */
 header {
   display: flex;
   flex-direction: column;
 }
 
+/* Body styles */
 body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -25,9 +30,11 @@ body {
   background-color: #191919;
 }
 
+/* Footer styles */
 footer {
-  text-align: center;
-  padding: 20px;
-  border-top: 2px solid #444;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0f0f0f;
   font-size: 0.9em;
 }

@@ -1,0 +1,13 @@
+/* Global Sizes */
+.logo-width {
+  width: 4em;
+}
+.logo-height {
+  height: 4em;
+}
+.logo-width-small {
+  width: 3em;
+}
+.logo-height-small {
+  height: 3em;
+}

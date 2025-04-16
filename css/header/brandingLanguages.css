@@ -1,4 +1,10 @@
 /* Language dropdown menu */
+.language-dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .lang-nav {
   margin-left: auto; /* Align to the right */
   cursor: pointer;
@@ -21,6 +27,7 @@
 .lang-menu ul li {
   padding: 4px 2px 2px 2px;
 }
+
 /* Dropdown menu behavior */
 .lang-menu ul {
   display: none;
