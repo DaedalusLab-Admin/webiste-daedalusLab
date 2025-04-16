@@ -1,17 +1,22 @@
 /* Importing CSS files for different sections */
-@import url("css/utils/reset.css"); /* Reset Browser Default CSS */
-@import url("css/global.css");
-@import url("css/header/branding.css");
-@import url("css/header/brandingLanguages.css");
-@import url("css/header/navigation.css");
-@import url("css/aboutUs.css");
-@import url("css/services.css");
-@import url("css/certifications.css");
-@import url("css/researcchAndDevelopment.css");
-@import url("css/footer/global.css");
-@import url("css/footer/footerBranding.css");
-@import url("css/footer/contactUs.css");
-@import url("css/footer/subfooter.css");
+@import url("utils/reset.css"); /* Reset Browser Default CSS */
+
+@import url("global.css");
+
+@import url("header/branding.css");
+@import url("header/brandingLanguages.css");
+@import url("header/navigation.css");
+
+@import url("main/global.css");
+@import url("main/aboutUs.css");
+@import url("main/services.css");
+@import url("main/certifications.css");
+@import url("main/researcchAndDevelopment.css");
+
+@import url("footer/global.css");
+@import url("footer/footerBranding.css");
+@import url("footer/contactUs.css");
+@import url("footer/subfooter.css");
 
 /* Header styles */
 header {
@@ -34,6 +39,7 @@ body {
   color: white;
 }
 
+/* Main styles */
 main {
   position: relative; /* Ensure pseudo-element is positioned relative to main */
 }
@@ -54,20 +60,6 @@ main::before {
   mask-image: linear-gradient(to left, black 10%, transparent);
   /* Place the image behind the text */
   z-index: -1;
-}
-
-/* Main styles */
-main > section {
-  padding: 40px;
-}
-main > section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-main > section p {
-  font-size: 1.2em;
-  line-height: 1.6;
 }
 
 /* Footer styles */

@@ -18,10 +18,12 @@ function loadHTML(targetId, filePath) {
 // Load html files
 loadHTML("branding", "html/header/branding.html");
 loadHTML("navigation", "html/header/navigation.html");
-loadHTML("aboutUs", "html/aboutUs.html");
-loadHTML("services", "html/services.html");
-loadHTML("certifications", "html/certifications.html");
-loadHTML("researchAndDevelopment", "html/researchAndDevelopment.html");
+
+loadHTML("aboutUs", "html/main/aboutUs.html");
+loadHTML("services", "html/main/services.html");
+loadHTML("certifications", "html/main/certifications.html");
+loadHTML("researchAndDevelopment", "html/main/researchAndDevelopment.html");
+
 loadHTML("footerBranding", "html/footer/footerBranding.html");
 loadHTML("contactUs", "html/footer/contactUs.html");
 loadHTML("subFooter", "html/footer/subFooter.html");

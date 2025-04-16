@@ -1,0 +1,13 @@
+/* Global Styles */
+main > section {
+  padding: 40px;
+}
+main > section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+main > section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
