@@ -15,7 +15,11 @@
 .selected-lang {
   display: flex;
   cursor: pointer;
-  padding: 4px;
+}
+
+.selected-lang,
+.lang-menu ul {
+  background-color: rgb(255, 255, 255); /* Add transparency */
 }
 
 .lang-menu {
@@ -24,8 +28,9 @@
   position: relative;
 }
 
+.selected-lang,
 .lang-menu ul li {
-  padding: 4px 2px 2px 2px;
+  padding: 1px;
 }
 
 /* Dropdown menu behavior */
@@ -33,17 +38,20 @@
   display: none;
   position: absolute;
   top: 100%; /* Place below the .lang-menu */
-  background-color: grey;
-  border-radius: 5px;
+  border-radius: 0 0 2px 2px;
 }
 
 .lang-menu:hover ul {
   display: block;
 }
 
-.lang-menu ul li:hover {
-  border: 1px solid white;
-  border-radius: 5px;
+.selected-lang,
+.lang-menu:hover {
+  border-radius: 2px;
+}
+
+.lang-menu ul li a:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 1);
 }
 
 /* Flag icons for selected language and dropdown languages */
@@ -55,9 +63,15 @@
   width: 32px; /* Flag icon */
   height: 22px; /* Flag icon */
 }
+
 .selected-lang:before {
   background-image: url("/assets/icons/flags/it.svg");
 }
+.selected-lang:hover,
+.lang-menu:hover .selected-lang {
+  border-radius: 2px 2px 0 0;
+}
+
 .lang-menu ul li a:before {
   display: inline-block;
   vertical-align: middle;
