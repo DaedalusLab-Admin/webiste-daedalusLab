@@ -9,6 +9,7 @@
 #footerBranding > div {
   display: flex;
   justify-content: left;
+  gap: 0.3em; /* Space between the logo and the text */
 }
 
 #footerBranding h1,

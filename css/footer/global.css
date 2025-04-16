@@ -3,6 +3,7 @@ footer > div {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  width: 90%;
 }
 
 /* Footer global sizes */
@@ -18,6 +19,11 @@ footer > div {
 
 #footerBranding .brief-description p,
 #contactUs p {
-  font-size: 1em;
-  padding: 10px;
+  font-size: 1.2em;
+}
+
+/* Footer divider */
+.footer-custom-divider {
+  width: 91%;
+  margin: 10px;
 }

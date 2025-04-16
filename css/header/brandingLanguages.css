@@ -56,7 +56,7 @@
   height: 22px; /* Flag icon */
 }
 .selected-lang:before {
-  background-image: url("/icons/assets/flags/it.svg");
+  background-image: url("/assets/icons/flags/it.svg");
 }
 .lang-menu ul li a:before {
   display: inline-block;
@@ -65,8 +65,8 @@
 
 /* Flag icons */
 .en:before {
-  background-image: url("/icons/assets/flags/en.svg");
+  background-image: url("/assets/icons/flags/en.svg");
 }
 .it:before {
-  background-image: url("/icons/assets/flags/it.svg");
+  background-image: url("/assets/icons/flags/it.svg");
 }

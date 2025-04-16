@@ -24,6 +24,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #191919;
   /* Font settings */
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -31,7 +32,6 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   color: white;
-  background-color: #191919;
 }
 
 main {
@@ -75,5 +75,5 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #0f0f0f;
+  background-color: #191919;
 }
