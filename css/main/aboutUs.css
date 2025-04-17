@@ -1,0 +1,22 @@
+.about-us-body {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about-us-body > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+
+.about-us-body:first-child {
+    width: 20%;
+}
+
+.about-us-logo {
+    width: 13em;
+    height: 13em;
+}

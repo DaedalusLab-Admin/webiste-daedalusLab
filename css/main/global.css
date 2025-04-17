@@ -35,8 +35,6 @@ main > section {
 }
 
 .section-body {
-  display: flex;
-  flex-direction: column;
   margin: 0.5em;
 }
 /* Sizes */
