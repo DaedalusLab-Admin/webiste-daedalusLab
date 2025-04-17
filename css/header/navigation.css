@@ -7,6 +7,7 @@
 
 #navigation a {
   font-size: 2em;
+  padding: 2px;
 }
 
 .navigation-nav {
@@ -17,20 +18,15 @@
 }
 
 .navigation-nav div {
-  padding: 10px 0 10px 0;
+  padding: 5px 0 5px 0;
   text-align: center;
   width: 100%;
 }
+
 .navigation-nav div * {
   text-decoration: none;
   color: white;
   font-weight: bold;
   border: 1px solid transparent;
-  transition: all 0.3s ease;
   align-items: center;
-}
-
-.navigation-nav div a:hover {
-  border: 1px solid white;
-  background-color: #0f0f0f;
 }
