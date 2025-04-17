@@ -35,14 +35,20 @@
 
 /* Dropdown menu behavior */
 .lang-menu ul {
-  display: none;
   position: absolute;
   top: 100%; /* Place below the .lang-menu */
   border-radius: 0 0 2px 2px;
+  /* Hidden COnfiguration */
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.3s ease, max-height 0.3s ease;
+  pointer-events: none; /* Prevent mouse events when hidden */
 }
 
 .lang-menu:hover ul {
-  display: block;
+  /* Visible COnfiguration */
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto; /* Enable mouse events when visible */
 }
 
 .selected-lang,
