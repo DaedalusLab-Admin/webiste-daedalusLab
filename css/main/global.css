@@ -1,13 +1,55 @@
-/* Global Styles */
+/* Main Styles */
 main > section {
   padding: 40px;
-}
-main > section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-main > section p {
-  font-size: 1.2em;
-  line-height: 1.6;
+/* Sections Elements */
+.section-header,
+.section-body {
+  width: 100%;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-title,
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle {
+  margin-bottom: 1em;
+}
+
+.section-divider {
+  width: 35em;
+  margin: 1em;
+}
+
+.section-body {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+}
+/* Sizes */
+.section-title h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.subtitle h1 {
+  font-size: 3em;
+}
+
+.section-body p {
+  font-size: 2em;
+  line-height: 1.5em;
 }

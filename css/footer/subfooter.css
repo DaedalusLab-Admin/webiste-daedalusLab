@@ -8,6 +8,9 @@
   color: #878787;
 }
 
+#subFooter p {
+  padding: 5px 0 5px 0;
+}
 #subFooter a,
 #subFooter p {
   margin: 5px;

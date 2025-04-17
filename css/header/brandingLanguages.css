@@ -19,7 +19,7 @@
 
 .selected-lang,
 .lang-menu ul {
-  background-color: rgb(255, 255, 255); /* Add transparency */
+  background-color: transparent;
 }
 
 .lang-menu {
