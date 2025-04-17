@@ -5,6 +5,10 @@
   border-top: 2px solid white;
 }
 
+#navigation a {
+  font-size: 2em;
+}
+
 .navigation-nav {
   width: 100%;
   display: flex;

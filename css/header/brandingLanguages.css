@@ -51,7 +51,7 @@
 }
 
 .lang-menu ul li a:hover {
-  box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+  box-shadow: 0 0 60px rgba(255, 255, 255, 1);
 }
 
 /* Flag icons for selected language and dropdown languages */
@@ -60,8 +60,8 @@
   content: "";
   background-size: contain;
   background-repeat: no-repeat;
-  width: 32px; /* Flag icon */
-  height: 22px; /* Flag icon */
+  width: 80px; /* Flag icon */
+  height: 56px; /* Flag icon */
 }
 
 .selected-lang:before {
