@@ -40,7 +40,7 @@
   border-radius: 0 0 2px 2px;
   /* Hidden COnfiguration */
   opacity: 0;
-  transition: opacity 0.8s ease, transform 0.3s ease, max-height 0.3s ease;
+  transition: opacity 1s ease, transform 1.5s ease, max-height 1s ease;
   pointer-events: none; /* Prevent mouse events when hidden */
 }
 

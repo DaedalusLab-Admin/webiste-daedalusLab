@@ -1,0 +1,21 @@
+/* underline animations */
+.underline-animation {
+  background: linear-gradient(to right, white 0%, white 100%);
+}
+.underline-animation-grey {
+  background: linear-gradient(to right, #878787 0%, #878787 100%);
+}
+.underline-animation,
+.underline-animation-grey {
+  color: inherit;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: 0 100%; /* Start from the left */
+  background-size: 0% 1px; /* Initially hidden */
+  transition: background-size 0.4s ease; /* Smooth animation */
+  padding: 5px 0 5px 0;
+}
+.underline-animation-grey:hover,
+.underline-animation:hover {
+  background-size: 100% 1px; /* Expand the line from left to right */
+}

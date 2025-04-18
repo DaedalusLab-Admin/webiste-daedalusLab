@@ -1,121 +1,51 @@
-/* Custom Divider */
-.custom-section-divider,
-.custom-section-divider-small {
-  background-color: white;
-  width: 100%;
-  margin: 5px;
-  padding: 0px;
-}
-.custom-section-divider {
-  height: 2px;
-}
-.custom-section-divider-small {
-  height: 1px;
-}
-.custom-element-divider {
-  background-color: #878787;
-  width: 90%;
-  margin: 5px auto;
-  padding: 0px;
-  height: 1px;
+/* Header styles */
+header {
+  display: flex;
+  flex-direction: column;
 }
 
-/* underline animations */
-.underline-animation {
-  background: linear-gradient(to right, white 0%, white 100%);
-}
-.underline-animation-grey {
-  background: linear-gradient(to right, #878787 0%, #878787 100%);
-}
-.underline-animation,
-.underline-animation-grey {
-  color: inherit;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: 0 100%; /* Start from the left */
-  background-size: 0% 1px; /* Initially hidden */
-  transition: background-size 0.4s ease; /* Smooth animation */
-  padding: 5px 0 5px 0;
-}
-.underline-animation-grey:hover,
-.underline-animation:hover {
-  background-size: 100% 1px; /* Expand the line from left to right */
+/* Body styles */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #191919;
+  /* Font settings */
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: white;
 }
 
-/* Surrounding lines animation */
-.hover-underline {
-  font-size: 2rem;
-  color: #079d04;
-  position: relative;
-  display: inline-block;
+/* Main styles */
+main {
+  position: relative; /* Ensure pseudo-element is positioned relative to main */
 }
 
-.hover-underline::after,
-.hover-underline::before {
+/* Pseudo-element to place a gradient background image*/
+main::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 2px;
-  background: #079d04;
-  bottom: -4px;
+  top: 0;
   left: 0;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.4s ease-out;
+  width: 100%;
+  height: 100%;
+  /* Add the background */
+  background-image: url("../assets/grid.svg");
+  background-repeat: repeat;
+  background-size: contain;
+  /* Add a gradient mask to the background image */
+  mask-image: linear-gradient(to left, black 10%, transparent);
+  /* Place the image behind the text */
+  z-index: -1;
 }
 
-.hover-underline::before {
-  top: -5px;
-  transform-origin: left;
-}
-
-.hover-underline:hover::after,
-.hover-underline:hover::before {
-  transform: scaleX(1);
-}
-
-/* Background animation */
-.background-animation {
-  position: relative;
-  text-decoration: none;
-  z-index: 1;
-  /* Black Text Border */
-  text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black,
-    0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
-}
-.background-animation::before {
-  background: white;
-  content: "";
-  inset: 0;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s ease-in-out;
-  z-index: -1; /* sends background behind the text */
-}
-.background-animation:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-/* Pulse Animation */
-.pulse-animation:hover {
-  /* Button default styles, customize them to match your button */
-  display: inline-block;
-  color: #fff;
-  cursor: pointer;
-  /* Apply the pulse animation */
-  animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
+/* Footer styles */
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #191919;
 }

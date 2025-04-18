@@ -1,71 +1,29 @@
 /* Importing CSS files for different sections */
-@import url("utils/reset.css"); /* Reset Browser Default CSS */
-
 @import url("global.css");
 
+/* Utils */
+@import url("utils/reset.css"); /* Reset Browser Default CSS */
+@import url("utils/dividers.css");
+
+/* Animations */
+@import url("utils/animations/pulse.css");
+@import url("utils/animations/underline.css");
+@import url("utils/animations/zigzag.css"); /*TODO remove this */
+
+/* Header */
 @import url("header/branding.css");
 @import url("header/brandingLanguages.css");
 @import url("header/navigation.css");
 
+/* Main */
 @import url("main/global.css");
 @import url("main/aboutUs.css");
 @import url("main/services.css");
 @import url("main/certifications.css");
 @import url("main/researcchAndDevelopment.css");
 
+/* Footer */
 @import url("footer/global.css");
 @import url("footer/footerBranding.css");
 @import url("footer/contactUs.css");
 @import url("footer/subfooter.css");
-
-/* Header styles */
-header {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Body styles */
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #191919;
-  /* Font settings */
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  color: white;
-}
-
-/* Main styles */
-main {
-  position: relative; /* Ensure pseudo-element is positioned relative to main */
-}
-
-/* Pseudo-element to place a gradient background image*/
-main::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* Add the background */
-  background-image: url("../assets/grid.svg");
-  background-repeat: repeat;
-  background-size: contain;
-  /* Add a gradient mask to the background image */
-  mask-image: linear-gradient(to left, black 10%, transparent);
-  /* Place the image behind the text */
-  z-index: -1;
-}
-
-/* Footer styles */
-footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #191919;
-}
