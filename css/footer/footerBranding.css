@@ -6,6 +6,10 @@
   width: 25em; /* Increase allow the text to go towards the right */
 }
 
+#footerBranding .logo-width {
+  width: 3em;
+}
+
 #footerBranding > div {
   display: flex;
   justify-content: left;

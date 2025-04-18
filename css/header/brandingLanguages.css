@@ -60,14 +60,27 @@
   box-shadow: 0 0 60px rgba(255, 255, 255, 1);
 }
 
+/* Flag Size */
+.selected-lang:before,
+.lang-menu ul li a:before {
+  width: 80px; /* Flag icon */
+  height: 56px; /* Flag icon */
+}
+
+@media (max-width: 850px) {
+  .selected-lang:before,
+  .lang-menu ul li a:before {
+    width: 40px; /* Flag icon */
+    height: 28px; /* Flag icon */
+  }
+}
+
 /* Flag icons for selected language and dropdown languages */
 .selected-lang:before,
 .lang-menu ul li a:before {
   content: "";
   background-size: contain;
   background-repeat: no-repeat;
-  width: 80px; /* Flag icon */
-  height: 56px; /* Flag icon */
 }
 
 .selected-lang:before {

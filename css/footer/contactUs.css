@@ -6,6 +6,10 @@
   min-width: fit-content;
 }
 
+#contactUs .logo-height {
+  height: 3em;
+}
+
 .contact-title {
   display: flex;
   align-items: center;

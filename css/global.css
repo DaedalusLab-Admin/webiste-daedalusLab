@@ -1,17 +1,3 @@
-/* Global Sizes */
-.logo-width {
-  width: 6em;
-}
-.logo-height {
-  height: 6em;
-}
-.logo-width-small {
-  width: 3em;
-}
-.logo-height-small {
-  height: 3em;
-}
-
 /* Custom Divider */
 .custom-section-divider,
 .custom-section-divider-small {
@@ -26,7 +12,6 @@
 .custom-section-divider-small {
   height: 1px;
 }
-
 .custom-element-divider {
   background-color: #878787;
   width: 90%;
@@ -35,41 +20,70 @@
   height: 1px;
 }
 
-/* link animations */
-.link-btm-animation {
+/* underline animations */
+.underline-animation {
   background: linear-gradient(to right, white 0%, white 100%);
 }
-.link-btm-animation-grey {
+.underline-animation-grey {
   background: linear-gradient(to right, #878787 0%, #878787 100%);
 }
-
-.link-btm-animation,
-.link-btm-animation-grey {
+.underline-animation,
+.underline-animation-grey {
   color: inherit;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: 0 100%; /* Start from the left */
-
   background-size: 0% 1px; /* Initially hidden */
   transition: background-size 0.4s ease; /* Smooth animation */
   padding: 5px 0 5px 0;
 }
-
-.link-btm-animation-grey:hover,
-.link-btm-animation:hover {
+.underline-animation-grey:hover,
+.underline-animation:hover {
   background-size: 100% 1px; /* Expand the line from left to right */
 }
 
-/* link background animation */
-.link-back-animation {
+/* Surrounding lines animation */
+.hover-underline {
+  font-size: 2rem;
+  color: #079d04;
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #079d04;
+  bottom: -4px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+/* Background animation */
+.background-animation {
   position: relative;
   text-decoration: none;
   z-index: 1;
-  text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black,
-    -1px 1px 2px black, 0px 1px 2px black, 0px -1px 2px black, 1px 0px 2px black,
-    -1px 0px 2px black;
+  /* Black Text Border */
+  text-shadow: 0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black,
+    0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
 }
-.link-back-animation::before {
+.background-animation::before {
   background: white;
   content: "";
   inset: 0;
@@ -79,8 +93,29 @@
   transition: transform 0.5s ease-in-out;
   z-index: -1; /* sends background behind the text */
 }
-
-.link-back-animation:hover::before {
+.background-animation:hover::before {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+/* Pulse Animation */
+.pulse-animation:hover {
+  /* Button default styles, customize them to match your button */
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  /* Apply the pulse animation */
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
