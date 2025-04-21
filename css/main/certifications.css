@@ -1,0 +1,45 @@
+.certifications-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 3em;
+}
+
+.certification-logo {
+  /* backdrop-filter: blur(6px);
+  border-radius: 20px;
+  padding: 20px; */
+  color: inherit;
+  text-decoration: none;
+  width: 20%;
+  min-width: 25em;
+  max-width: 25em;
+}
+
+.certification-logo > img {
+  width: 25em;
+  height: 12em;
+}
+
+.certification-logo > p {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* hover effect */
+.certification-logo {
+  transition: color 0.57s ease;
+}
+/* hover effect on non-selected  */
+.certifications-logos:has(.grow-once-animation:hover) .certification-logo {
+  color: rgba(255, 255, 255, 0.3); /* subtle fade */
+  opacity: 0.3; /* subtle fade */
+}
+/* Make sure the hovered one stays white */
+.certifications-logos:has(.grow-once-animation:hover)
+  .grow-once-animation:hover {
+  color: white;
+  opacity: 1;
+}

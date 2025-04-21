@@ -6,7 +6,6 @@
 }
 
 #navigation a {
-  transition: color 1s ease;
   font-size: 2em;
   padding: 2px;
 }
@@ -36,12 +35,16 @@
   align-items: center;
 }
 
+/* hover effect */
+#navigation a {
+  transition: color 0.57s ease;
+}
 /* hover effect on non-selected links */
-.navigation-nav:has(.pulse-animation:hover) a {
+.navigation-nav:has(.grow-once-animation:hover) a {
   color: rgba(255, 255, 255, 0.3); /* subtle fade */
 }
 /* Make sure the hovered one stays white */
-.navigation-nav:has(.pulse-animation:hover) .pulse-animation:hover {
+.navigation-nav:has(.grow-once-animation:hover) .grow-once-animation:hover {
   color: white;
 }
 

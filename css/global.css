@@ -2,11 +2,11 @@
 header {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 /* Body styles */
 body {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #191919;
@@ -15,7 +15,7 @@ body {
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: "width" 100;
   color: white;
 }
 
@@ -48,4 +48,5 @@ footer {
   align-items: center;
   flex-direction: column;
   background-color: #191919;
+  width: 100%;
 }

@@ -1,0 +1,10 @@
+#researchAndDevelopment .section-body {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+#researchAndDevelopment img {
+  aspect-ratio: 1/1;
+  width: 13em;
+}

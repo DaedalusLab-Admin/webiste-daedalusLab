@@ -1,0 +1,22 @@
+.rotating-border-animation {
+  position: absolute;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-color: #1c1b29;
+}
+.rotating-border-animation:before {
+  position: absolute;
+  content: "";
+  background-image: conic-gradient(#04b0ee 20deg, transparent 120deg);
+  height: 150%;
+  width: 150%;
+  left: -25%;
+  top: -25%;
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(-360deg);
+  }
+}

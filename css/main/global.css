@@ -19,6 +19,13 @@ main > section {
 }
 
 .section-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.section-body {
   gap: 2em;
 }
 
@@ -39,7 +46,8 @@ main > section {
 }
 
 .section-body {
-  margin: 0.5em;
+  margin: auto;
+  width: 90%;
 }
 /* Sizes */
 .section-title h1 {
@@ -51,7 +59,8 @@ main > section {
   font-size: 3em;
 }
 
-.section-body p {
+.section-body > p,
+.service-box > p {
   font-size: 2em;
   line-height: 1.5em;
 }

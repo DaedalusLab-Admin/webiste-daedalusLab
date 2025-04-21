@@ -1,8 +1,6 @@
 /* Contact us */
 #contactUs {
   text-align: left;
-  /* Increase to move the section to the left */
-  width: 25%;
   min-width: fit-content;
 }
 

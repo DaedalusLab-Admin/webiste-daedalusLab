@@ -4,11 +4,9 @@
 }
 
 .pulse-animation:hover {
-  /* Button default styles, customize them to match your button */
   display: inline-block;
   color: #fff;
   cursor: pointer;
-  /* Apply the pulse animation */
   animation: pulse 1.5s infinite;
 }
 

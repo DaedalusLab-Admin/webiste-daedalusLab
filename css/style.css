@@ -6,9 +6,9 @@
 @import url("utils/dividers.css");
 
 /* Animations */
-@import url("utils/animations/pulse.css");
 @import url("utils/animations/underline.css");
-@import url("utils/animations/zigzag.css");
+@import url("utils/animations/growOnce.css");
+@import url("utils/animations/rotatingBorder.css");
 
 /* Header */
 @import url("header/branding.css");
@@ -27,30 +27,3 @@
 @import url("footer/footerBranding.css");
 @import url("footer/contactUs.css");
 @import url("footer/subfooter.css");
-
-.service-box {
-  position: relative;
-  padding: 20px;
-  border: 2px solid transparent; /* Initial border */
-  overflow: hidden;
-  transition: border-color 0.3s ease-in-out;
-}
-
-.service-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  border-color: green;
-  transition: height 0.5s ease-in-out;
-}
-
-.service-box:hover::before {
-  height: 100%;
-}
-
-.service-box:hover {
-  border-color: green; /* Change border color on hover */
-}
