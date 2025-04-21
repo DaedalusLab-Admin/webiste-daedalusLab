@@ -34,8 +34,8 @@
 }
 /* hover effect on non-selected  */
 .certifications-logos:has(.grow-once-animation:hover) .certification-logo {
-  color: rgba(255, 255, 255, 0.3); /* subtle fade */
-  opacity: 0.3; /* subtle fade */
+  color: rgba(255, 255, 255, 0.8); /* subtle fade */
+  opacity: 0.8; /* subtle fade */
 }
 /* Make sure the hovered one stays white */
 .certifications-logos:has(.grow-once-animation:hover)

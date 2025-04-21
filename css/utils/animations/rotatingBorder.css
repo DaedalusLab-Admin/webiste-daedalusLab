@@ -1,18 +1,38 @@
-.rotating-border-animation {
-  position: absolute;
+.rotating-border-container {
+  position: relative;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  background-color: #1c1b29;
+  background-color: #292929; /* Fixed the hex color */
+  padding: 5px;
+  border-radius: 30px;
 }
-.rotating-border-animation:before {
+
+/* Hide the border animation by default */
+.rotating-border-container::before {
   position: absolute;
   content: "";
-  background-image: conic-gradient(#04b0ee 20deg, transparent 120deg);
+  background-image: conic-gradient(#079d04 20deg, transparent 120deg);
   height: 150%;
   width: 150%;
   left: -25%;
   top: -25%;
+  z-index: 0;
+  opacity: 0;
+  transform: rotate(0deg);
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show and animate on hover */
+.rotating-border-container:hover::before {
+  opacity: 1;
   animation: rotate 2s infinite linear;
+}
+
+/* Content inside the container */
+.rotating-border-container > div {
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
 }
 
 @keyframes rotate {

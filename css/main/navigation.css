@@ -3,6 +3,13 @@
   justify-content: center;
   border-bottom: 2px solid white;
   border-top: 2px solid white;
+  width: 100%;
+  z-index: 1000;
+}
+
+#navigation {
+  position: sticky;
+  top: 0;
 }
 
 #navigation a {

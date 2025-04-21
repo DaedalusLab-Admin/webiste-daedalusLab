@@ -13,9 +13,9 @@
 /* Header */
 @import url("header/branding.css");
 @import url("header/brandingLanguages.css");
-@import url("header/navigation.css");
 
 /* Main */
+@import url("main/navigation.css");
 @import url("main/global.css");
 @import url("main/aboutUs.css");
 @import url("main/services.css");

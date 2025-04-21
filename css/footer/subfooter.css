@@ -6,11 +6,13 @@
   justify-content: space-around;
   flex-wrap: wrap;
   color: #878787;
+  padding: 10px;
 }
 
 #subFooter p {
   padding: 5px 0 5px 0;
 }
+
 #subFooter a,
 #subFooter p {
   margin: 5px;

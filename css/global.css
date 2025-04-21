@@ -2,6 +2,7 @@
 header {
   display: flex;
   flex-direction: column;
+  z-index: 1500;
   width: 100%;
 }
 
@@ -22,6 +23,10 @@ body {
 /* Main styles */
 main {
   position: relative; /* Ensure pseudo-element is positioned relative to main */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Pseudo-element to place a gradient background image*/

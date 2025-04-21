@@ -1,8 +1,9 @@
 /* Main Styles */
 main > section {
-  padding: 40px;
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /* Sections Elements */
