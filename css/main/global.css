@@ -2,13 +2,14 @@
 main > section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 /* Sections Elements */
 .section-header,
 .section-body {
-  width: 100%;
+  width: 90%;
 }
 
 .section-header {
@@ -43,11 +44,6 @@ main > section {
 .section-divider {
   width: 35em;
   margin: 1em;
-}
-
-.section-body {
-  margin: auto;
-  width: 90%;
 }
 
 /* Sizes */

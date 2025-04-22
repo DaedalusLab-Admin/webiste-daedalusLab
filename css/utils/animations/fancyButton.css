@@ -1,0 +1,49 @@
+/* From Uiverse.io by adamgiebl */
+.fancy-btn {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  background: #292929;
+  color: white;
+  font-size: 1.5em;
+  height: 2.8em;
+  border-radius: 15px;
+  padding-left: 1.2em;
+  padding-right: 3.3em;
+}
+
+.fancy-btn .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.fancy-btn:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.fancy-btn .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #079d04;
+}
+
+.fancy-btn:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.fancy-btn:active .icon {
+  transform: scale(0.95);
+}

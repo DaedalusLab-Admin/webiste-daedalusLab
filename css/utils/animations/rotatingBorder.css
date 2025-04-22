@@ -4,7 +4,6 @@
   overflow: hidden;
   background-color: #292929; /* Fixed the hex color */
   padding: 5px;
-  border-radius: 30px;
 }
 
 /* Hide the border animation by default */
@@ -29,10 +28,9 @@
 }
 
 /* Content inside the container */
-.rotating-border-container > div {
+.rotating-border-container * {
   position: relative;
   z-index: 1;
-  border-radius: 30px;
 }
 
 @keyframes rotate {

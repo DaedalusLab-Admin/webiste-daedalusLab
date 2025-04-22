@@ -15,6 +15,11 @@
   gap: 4em;
 }
 
+.service-boxes > div,
+.service-box {
+  border-radius: 30px;
+}
+
 .service-box {
   display: flex;
   flex-direction: column;

@@ -55,3 +55,27 @@ footer {
   background-color: #191919;
   width: 100%;
 }
+
+/* Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+main > section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 80vh;
+  padding: 5em 0;
+}
+/* First and Last sections scroll behavior (due to header) */
+#aboutUs {
+  scroll-snap-align: none;
+  min-height: 60vh;
+}
+
+header {
+  scroll-snap-align: start;
+}
+footer {
+  scroll-snap-align: end;
+}
