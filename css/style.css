@@ -27,3 +27,20 @@
 @import url("footer/footerBranding.css");
 @import url("footer/contactUs.css");
 @import url("footer/subfooter.css");
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+main > section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 80vh;
+  padding: 5em 0;
+}
+header {
+  scroll-snap-align: start;
+}
+footer {
+  scroll-snap-align: end;
+}

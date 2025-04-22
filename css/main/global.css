@@ -1,6 +1,5 @@
 /* Main Styles */
 main > section {
-  padding: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,6 +49,7 @@ main > section {
   margin: auto;
   width: 90%;
 }
+
 /* Sizes */
 .section-title h1 {
   font-size: 4em;
