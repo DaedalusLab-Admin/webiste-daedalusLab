@@ -1,8 +1,6 @@
 #navigation {
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
   width: 100%;
   z-index: 999;
 }
@@ -22,9 +20,11 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background: #020202;
   width: 100%;
   height: auto;
+  border-top: 2px solid white;
+  background: #020202;
+  border-bottom: 2px solid white;
 }
 
 .navigation-nav div {
@@ -55,14 +55,36 @@
   color: white;
 }
 
-/* Stack vertically on small screens */
-@media (max-width: 850px) {
+.burger {
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none; /* hidden by default */
+  position: absolute;
+  left: 0px;
+  font-size: 3em;
+  z-index: 1000;
+}
+
+/* Show burger on small screens */
+@media (max-width: 480px) {
+  .burger {
+    display: block;
+  }
+
   .navigation-nav {
+    position: absolute;
+    display: none;
     flex-direction: column;
     align-items: stretch; /* optional: full width */
   }
 
   .navigation-nav div {
     width: 100%;
+  }
+
+  .navigation-nav.active {
+    display: flex;
   }
 }

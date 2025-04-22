@@ -20,6 +20,10 @@ body {
   color: white;
 }
 
+body {
+  font-size: 0.8em;
+}
+
 /* Main styles */
 main {
   position: relative; /* Ensure pseudo-element is positioned relative to main */
@@ -59,18 +63,19 @@ footer {
 /* Scroll Behavior */
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 main > section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   min-height: 80vh;
   padding: 5em 0;
+  overflow-y: auto;
 }
-/* First and Last sections scroll behavior (due to header) */
+/* First section scroll behavior (due to header) */
 #aboutUs {
-  scroll-snap-align: none;
   min-height: 60vh;
+  scroll-snap-align: none;
 }
 
 header {
@@ -78,4 +83,18 @@ header {
 }
 footer {
   scroll-snap-align: end;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.4em;
+  }
+
+  main > section {
+    min-height: 100vh;
+  }
+  #aboutUs {
+    min-height: 80vh;
+  }
 }

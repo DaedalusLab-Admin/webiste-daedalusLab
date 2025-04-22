@@ -24,10 +24,15 @@ main > section {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  justify-content: space-around;
 }
 
 .section-body {
   gap: 2em;
+}
+
+.section-body > * {
+  padding: 10px 0 10px 0;
 }
 
 .section-title,

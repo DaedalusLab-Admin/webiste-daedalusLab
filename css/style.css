@@ -1,8 +1,12 @@
 /* Importing CSS files for different sections */
-@import url("global.css");
+
+/* Reset Browser Default CSS */
+@import url("utils/reset.css");
+
+/* Global */
+@import url("./global.css");
 
 /* Utils */
-@import url("utils/reset.css"); /* Reset Browser Default CSS */
 @import url("utils/dividers.css");
 
 /* Animations */

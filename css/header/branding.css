@@ -23,19 +23,6 @@
   width: 6em;
 }
 
-@media (max-width: 850px) {
-  #branding .logo-width {
-    width: 3em;
-  }
-  #branding h1 {
-    font-size: 2em;
-    font-weight: bold;
-  }
-  #branding p {
-    font-size: 1em;
-  }
-}
-
 /* Branding title and subtitle */
 #branding .name-tagline h1,
 #branding .name-tagline p {
