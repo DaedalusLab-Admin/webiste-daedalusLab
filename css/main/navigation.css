@@ -67,7 +67,7 @@
 }
 
 /* Show burger on small screens */
-@media (max-width: 640px) {
+@media (max-width: 1220px) {
   .burger {
     display: block;
   }

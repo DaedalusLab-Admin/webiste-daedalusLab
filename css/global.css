@@ -111,4 +111,9 @@ main > section {
     scroll-snap-align: none;
     scroll-snap-stop: normal;
   }
+
+  /* remove section dividers*/
+  .custom-section-divider {
+    visibility: hidden;
+  }
 }

@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # --- CONFIGURATION ---
-HOST="ftps.example.com"
-USER="your_username"
-REMOTE_DIR="/remote/path"  # Remote directory to clean and upload to
+HOST="ftp.daedaluslab.it"
+USER="18098417@aruba.it"
+REMOTE_DIR="/www.daedaluslab.it"  # Remote directory to clean and upload to
 
 # --- ASK FOR PASSWORD ---
 read -s -p "Enter FTP password for $USER@$HOST: " PASS
@@ -23,7 +23,7 @@ set ftp:ssl-protect-data true
 set ftp:ssl-auth TLS
 set ssl:verify-certificate no
 
-# Clean remote directory (delete all contents)
+# Clean remote directory 
 echo "Cleaning remote folder: $REMOTE_DIR"
 cd "$REMOTE_DIR"
 cls -1 | while read item; do
