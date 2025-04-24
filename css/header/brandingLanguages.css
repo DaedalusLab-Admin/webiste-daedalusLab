@@ -10,6 +10,7 @@
   cursor: pointer;
   border: transparent;
   background-color: transparent;
+  width: 100%;
 }
 
 .selected-lang {
@@ -42,6 +43,7 @@
   opacity: 0;
   transition: opacity 1s ease, transform 1.5s ease, max-height 1s ease;
   pointer-events: none; /* Prevent mouse events when hidden */
+  width: 100%;
 }
 
 .lang-menu:hover ul {
@@ -53,7 +55,7 @@
 
 .selected-lang,
 .lang-menu:hover {
-  border-radius: 2px;
+  width: 100%;
 }
 
 .lang-menu ul li a:hover {
@@ -63,11 +65,13 @@
 /* Flag Size */
 .selected-lang:before,
 .lang-menu ul li a:before {
-  width: 80px; /* Flag icon */
-  height: 56px; /* Flag icon */
+  width: 100%;
+  aspect-ratio: 1.5/1;
+  background-position: center;
+  border-radius: 4px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .selected-lang:before,
   .lang-menu ul li a:before {
     width: 40px; /* Flag icon */
@@ -79,7 +83,6 @@
 .selected-lang:before,
 .lang-menu ul li a:before {
   content: "";
-  background-size: contain;
   background-repeat: no-repeat;
 }
 

@@ -88,15 +88,27 @@ main > section {
 }
 
 /* Responsive styles */
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   body {
-    font-size: 0.4em;
+    font-size: 0.6em;
   }
 
   main > section {
-    min-height: 100vh;
+    min-height: 80vh;
   }
   #aboutUs {
-    min-height: 80vh;
+    min-height: 60vh;
+  }
+
+  /* Disable scroll snap */
+  html {
+    scroll-snap-type: none;
+  }
+
+  header,
+  footer,
+  main > section {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
   }
 }

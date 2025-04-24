@@ -4,7 +4,18 @@
   flex-direction: row;
 }
 
+/* widths */
 #researchAndDevelopment img {
   aspect-ratio: 1/1;
-  width: 13em;
+  width: 30%;
+}
+
+#researchAndDevelopment .section-body > p {
+  width: 60%;
+}
+
+@media (max-width: 640px) {
+  #researchAndDevelopment .section-body > p {
+    width: 100%;
+  }
 }

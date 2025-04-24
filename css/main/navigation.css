@@ -22,7 +22,6 @@
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  border-top: 2px solid white;
   background: #020202;
   border-bottom: 2px solid white;
 }
@@ -68,7 +67,7 @@
 }
 
 /* Show burger on small screens */
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .burger {
     display: block;
   }
