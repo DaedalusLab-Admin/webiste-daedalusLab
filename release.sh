@@ -3,8 +3,11 @@
 # --- CONFIGURATION ---
 HOST="ftps.example.com"
 USER="your_username"
-PASS="your_password"
 REMOTE_DIR="/remote/path"  # Remote directory to clean and upload to
+
+# --- ASK FOR PASSWORD ---
+read -s -p "Enter FTP password for $USER@$HOST: " PASS
+echo
 
 # --- SCRIPT SETTINGS ---
 SCRIPT_NAME=$(basename "$0")
@@ -20,17 +23,17 @@ set ftp:ssl-protect-data true
 set ftp:ssl-auth TLS
 set ssl:verify-certificate no
 
-# Remove remote folder contents
+# Clean remote directory (delete all contents)
 echo "Cleaning remote folder: $REMOTE_DIR"
 cd "$REMOTE_DIR"
 cls -1 | while read item; do
     if [ -n "\$item" ]; then
-        echo "Trying to remove \$item..."
+        echo "Removing \$item"
         rm -r "\$item"
     fi
 done
 
-# Upload local folder recursively, excluding the script itself
+# Upload local contents (recursively), excluding the script itself
 echo "Uploading files from local folder..."
 mirror -R --exclude-glob "$SCRIPT_NAME" ./ "$REMOTE_DIR"
 
