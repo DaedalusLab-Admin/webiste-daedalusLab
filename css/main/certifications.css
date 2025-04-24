@@ -19,11 +19,12 @@
 }
 
 .certification-logo > img {
-  width: 25em;
-  height: 12em;
+  aspect-ratio: 2/1;
+  width: 100%;
 }
 
 .certification-logo > p {
+  padding: 10px;
   font-size: 1em;
   font-weight: bold;
 }

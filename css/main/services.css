@@ -24,10 +24,8 @@
   display: flex;
   flex-direction: column;
   background: #292929;
-  width: 20%;
-  aspect-ratio: 1 / 1;
-  min-width: 22em;
-  max-width: 22em;
+  width: 22em;
+  height: 22em;
   padding: 1em;
   gap: 0.5em;
 }
