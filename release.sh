@@ -35,7 +35,7 @@ done
 
 # Upload local contents (recursively), excluding the script itself
 echo "Uploading files from local folder..."
-mirror -R --exclude-glob "$SCRIPT_NAME" ./ "$REMOTE_DIR"
+mirror -R --exclude-glob "$SCRIPT_NAME" --exclude-glob ".git*" ./ "$REMOTE_DIR"
 
 bye
 EOF
