@@ -1,8 +1,8 @@
 /* Language dropdown menu */
 .language-dropdown {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .lang-nav {
@@ -10,17 +10,18 @@
   cursor: pointer;
   border: transparent;
   background-color: transparent;
-  width: 100%;
+  width: 73%;
 }
 
 .selected-lang {
   display: flex;
-  cursor: pointer;
 }
 
 .selected-lang,
 .lang-menu ul {
-  background-color: transparent;
+  background-color: white;
+  border-radius: 4px;
+  transition: all 1s;
 }
 
 .lang-menu {
@@ -38,7 +39,7 @@
 .lang-menu ul {
   position: absolute;
   top: 100%; /* Place below the .lang-menu */
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 4px 4px;
   /* Hidden COnfiguration */
   opacity: 0;
   transition: opacity 1s ease, transform 1.5s ease, max-height 1s ease;
@@ -46,7 +47,7 @@
   width: 100%;
 }
 
-.lang-menu:hover ul {
+.language-dropdown:hover .lang-menu ul {
   /* Visible COnfiguration */
   opacity: 1;
   transform: translateY(0);
@@ -68,7 +69,6 @@
   width: 100%;
   aspect-ratio: 1.5/1;
   background-position: center;
-  border-radius: 4px;
 }
 
 @media (max-width: 640px) {
@@ -89,9 +89,9 @@
 .selected-lang:before {
   background-image: url("/assets/icons/flags/it.svg");
 }
-.selected-lang:hover,
+.language-dropdown:hover .selected-lang,
 .lang-menu:hover .selected-lang {
-  border-radius: 2px 2px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 
 .lang-menu ul li a:before {
