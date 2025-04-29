@@ -1,13 +1,9 @@
 #navigation {
-  display: flex;
-  justify-content: center;
   width: 100%;
   z-index: 999;
-}
-
-#navigation {
   position: sticky;
   top: 0;
+  border-top: 2px solid white;
 }
 
 #navigation a {
@@ -49,34 +45,56 @@
 .navigation-nav:has(.grow-once-animation:hover) a {
   color: rgba(255, 255, 255, 0.3); /* subtle fade */
 }
+
 /* Make sure the hovered one stays white */
 .navigation-nav:has(.grow-once-animation:hover) .grow-once-animation:hover {
   color: white;
 }
 
+/* Responsiveness */
 .burger {
-  color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   background: transparent;
   border: none;
   cursor: pointer;
-  display: none; /* hidden by default */
-  position: absolute;
-  left: 0px;
-  font-size: 3em;
+  font-size: 1em;
+  width: 5em;
+  height: 4em;
+  padding: 5px;
   z-index: 1000;
+}
+
+.burger-line {
+  width: 3em;
+  height: 0.6em;
+  background-color: white;
+  transition: all 0.3s ease;
+  display: block;
+  border-radius: 2px;
 }
 
 /* Show burger on small screens */
 @media (max-width: 1220px) {
   .burger {
-    display: block;
+    display: flex;
+  }
+
+  #navigation {
+    display: flex;
+    justify-content: left;
+    height: 100%;
+    background: #020202;
+    border-bottom: 2px solid white;
   }
 
   .navigation-nav {
     position: absolute;
     display: none;
     flex-direction: column;
-    align-items: stretch; /* optional: full width */
+    align-items: stretch;
   }
 
   .navigation-nav div {

@@ -4,6 +4,6 @@ function changeLanguage(language) {
 }
 
 function toggleBurgerMenu() {
-  const nav = document.getElementById("navigationNav");
-  nav.classList.toggle("active");
+  document.getElementById("burger").classList.toggle("active");
+  document.getElementById("navigationNav").classList.toggle("active");
 }
