@@ -1,0 +1,37 @@
+{
+  "about": {
+    "title": "Chi siamo",
+    "content": "DaedalusLab crede che la tecnologia possa essere un motore di progresso senza compromettere le risorse del pianeta e si pone l'obiettivo di abilitare sviluppatori e aziende a creare un mondo digitale più responsabile e in equilibrio con l'ambiente. <br/><br/> Dedalus Lab si impegna non solo a sviluppare software eco-compatibili in ogni fase del ciclo di vita, dalla progettazione all'implementazione, ma anche a fornire strumenti pratici e innovativi che permettano agli sviluppatori di migliorare l'efficienza del proprio software in modo sostenibile e sicuro."
+  },
+  "services": {
+    "title": "SERVIZI",
+    "subtitle": "Eco Innovazione Digitale",
+    "content": "DaedalusLab intende diventare un riferimento globale nel rendere il software più sostenibile ed efficiente, dove ogni linea di codice, ogni algoritmo, e ogni applicazione sia progettata per funzionare al meglio, minimizzando il suo impatto ambientale.",
+    "greenSoftware": {
+      "title": "GREEN SOFTWARE",
+      "content": "Ci impegnamo a mettere la sostenibilità al centro dello sviluppo delle nostre soluzioni, che possono essere piattaforme web, applicazioni mobile o soluzioni per business come gestionali o CRM."
+    },
+    "cloud": {
+      "title": "CLOUD",
+      "content": "Forniamo consulenze su ambito cloud per infrastrutture, architettura e ottimizzazione dei sistemi dei nostri clienti oltre allo sviluppo di nuove soluzioni o integrazioni."
+    },
+    "mobileWeb": {
+      "title": "MOBILE AND WEB",
+      "content": "Creiamo piattaforme web o app native per iOS e Android, garantendo performance ottimali e scalabili. Utilizziamo le tecnologie più avanzate per sviluppare piattaforme innovative."
+    }
+  },
+  "certifications": {
+    "title": "CERTIFICAZIONI",
+    "content": "Per sviluppare al meglio le nostre soluzioni ci impegnamo ad espandere le conoscenze tecnologiche del team di sviluppo. <br/> Questo ci permette di garantire la massima qualità del nostro lavoro e di utilizzare sempre le tecnologie più innovative e affidabili."
+  },
+  "rnd": {
+    "title": "R&D",
+    "subtitle": "CYBERLEAF",
+    "content": "CyberLeaf mira ad essere una soluzione scalabile e modulare che permetta, sia a sviluppatori indipendenti che a team di sviluppo, di agire attivamente per ridurre il proprio impatto energetico. <br /> <br /> CyberLeaf ambisce a contribuire non solo alla sostenibilità aziendale, ma anche all'efficienza operativa, riducendo i costi energetici e promuovendo pratiche di sviluppo software più sostenibili.",
+    "link": "Scopri Cyberleaf"
+  },
+  "contacts": {
+    "title": "CONTATTI",
+    "content": "Il team di DaedalusLab è sempre attivo e a disposizione per qualisiasi domanda. Contattaci ed elaboreremo insieme la tua idea."
+  }
+}
