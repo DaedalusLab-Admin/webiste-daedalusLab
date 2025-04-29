@@ -1,99 +1,85 @@
-// Function to load an external HTML file into a target element
+import { HTML_SECTIONS, HTML_CONTENT } from "./resources/htmlMaps.js";
+
+/**
+ * Loads an external HTML file into a target element by fetching the file
+ * and inserting its content into the specified element in the DOM.
+ *
+ * @param {string} targetId - The ID of the target DOM element where the HTML
+ * content should be inserted.
+ * @param {string} filePath - The path to the external HTML file to be loaded.
+ */
 function loadHTML(targetId, filePath) {
   fetch(filePath)
     .then((response) => {
+      // Check if the response is OK (status code 200)
       if (!response.ok) {
         throw new Error(`Failed to load ${filePath}: ${response.statusText}`);
       }
-      return response.text();
+      return response.text(); // Parse response as text
     })
     .then((html) => {
+      // Insert the fetched HTML content into the target element
       document.getElementById(targetId).innerHTML = html;
     })
     .catch((error) => {
-      console.error(error);
+      console.error(error); // Log any errors during the fetch process
     });
 }
 
-// Load html files
-loadHTML("branding", "html/header/branding.html");
-loadHTML("navigation", "html/header/navigation.html");
+/**
+ * Loads multiple HTML files into their respective target elements in the DOM.
+ */
+export function loadAllHTMLSections() {
+  for (const [targetId, filePath] of Object.entries(HTML_SECTIONS)) {
+    loadHTML(targetId, filePath); // Load each HTML section into the DOM
+  }
+}
 
-loadHTML("aboutUs", "html/main/aboutUs.html");
-loadHTML("services", "html/main/services.html");
-loadHTML("certifications", "html/main/certifications.html");
-loadHTML("researchAndDevelopment", "html/main/researchAndDevelopment.html");
-
-loadHTML("footerBranding", "html/footer/footerBranding.html");
-loadHTML("contactUs", "html/footer/contactUs.html");
-loadHTML("subFooter", "html/footer/subFooter.html");
-
-// Function to update content dynamically
+/**
+ * Updates the content of DOM elements dynamically by accessing data in the
+ * provided JSON object based on the mapping in 'HTML_CONTENT'
+ *
+ * @param {Object} contentData - The JSON data object that contains the dynamic
+ * content.
+ */
 function updateContentFromJSON(contentData) {
-  // Object mapping for content updates
-  const elements = {
-    // Navigation
-    "nav-about-title": contentData.about.title,
-    "nav-services-title": contentData.services.title,
-    "nav-certifications-title": contentData.certifications.title,
-    "nav-rnd-title": contentData.rnd.title,
-    "nav-contacts-title": contentData.contacts.title,
-
-    // About Us
-    "about-title": contentData.about.title,
-    "about-content": contentData.about.content,
-
-    // Services
-    "services-title": contentData.services.title,
-    "services-subtitle": contentData.services.subtitle,
-    "services-content": contentData.services.content,
-    "green-software-title": contentData.services.greenSoftware.title,
-    "green-software-content": contentData.services.greenSoftware.content,
-    "cloud-title": contentData.services.cloud.title,
-    "cloud-content": contentData.services.cloud.content,
-    "mobile-web-title": contentData.services.mobileWeb.title,
-    "mobile-web-content": contentData.services.mobileWeb.content,
-
-    //Certifications
-    "certifications-title": contentData.certifications.title,
-    "certifications-content": contentData.certifications.content,
-
-    // Research and Development
-    "rnd-title": contentData.rnd.title,
-    "rnd-subtitle": contentData.rnd.subtitle,
-    "rnd-content": contentData.rnd.content,
-    "rnd-link": contentData.rnd.link,
-
-    // Contacts
-    "contacts-title": contentData.contacts.title,
-    "contacts-content": contentData.contacts.content,
-  };
-
-  // Update all elements dynamically using the object
-  for (const [id, content] of Object.entries(elements)) {
+  // Iterate over the mapping to update elements
+  for (const [id, path] of Object.entries(HTML_CONTENT)) {
     const element = document.getElementById(id);
     if (element) {
-      element.innerHTML = content;
+      // Traverse the nested path to access the content in contentData
+      const keys = path.split("."); // Split the path string into keys
+      let value = contentData;
+
+      // Traverse through the path and access the value
+      for (const key of keys) {
+        value = value[key];
+      }
+
+      // Set the content of the element
+      element.innerHTML = value;
     }
   }
 }
 
-// Function to fetch JSON data and update content
-function loadJSONAndUpdateContent() {
-  const jsonFilePath = "../it.json"; // Path to your JSON file
-
+/**
+ * Fetches a JSON file from the provided path and updates the content of the
+ * webpage based on the data in it
+ *
+ * @param {string} jsonFilePath - The path to the JSON file
+ */
+export function loadJSONAndUpdateContent(jsonFilePath) {
   fetch(jsonFilePath)
     .then((response) => {
+      // Check if the JSON file was successfully loaded
       if (!response.ok) {
         throw new Error(`Failed to load JSON: ${response.statusText}`);
       }
-      return response.json(); // Parse JSON
+      // Parse the response as JSON
+      return response.json();
     })
-    .then((data) => updateContentFromJSON(data))
+    .then((data) => updateContentFromJSON(data, HTML_CONTENT)) // Update content with JSON data
     .catch((error) => {
       console.error("Error loading or processing the JSON file:", error);
     });
 }
-
-// Call the function to load JSON and update content when the page loads
-window.onload = loadJSONAndUpdateContent;
