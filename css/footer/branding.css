@@ -15,3 +15,7 @@
 #footerBranding p {
   text-align: left;
 }
+
+#footerBranding .language {
+  font-size: 1em;
+}

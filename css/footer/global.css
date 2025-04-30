@@ -35,16 +35,18 @@ footer > div {
   line-height: 1.5em;
 }
 
-/* Footer divider */
-.footer-custom-divider {
-  width: 91%;
-  margin: 10px;
-}
-
 #footerBranding,
 #contactUs {
   width: 22em;
-  padding: 20px 40px 20px 40px;
+  padding: 10px 40px;
+}
+#footerBranding > div,
+#contactUs > div {
+  padding: 10px 0;
+}
+.brief-description,
+.contact-links {
+  border-top: 1px solid white;
 }
 
 @media (max-width: 1060px) {

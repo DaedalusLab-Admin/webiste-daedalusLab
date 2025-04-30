@@ -30,18 +30,22 @@ window.onload = function () {
   // Load HTML content from JSON based on language
   loadJSONAndUpdateContent(`./js/resources/languages/${lang}.json`);
 
-  //TODO change flag to else
   setTimeout(() => {
-    // Make sure lang-option exists and update it
-    const selectedLang = document.getElementById("selected-lang-option");
-    const nonSelectedLang = document.getElementById("lang-option");
+    const langOptions = document.querySelectorAll(".lang-option");
+    langOptions.forEach((option) => {
+      const optionLang = option.classList.contains("it") ? "it" : "en";
+      console.log(optionLang);
 
-    const otherLang = lang === "en" ? "it" : "en";
-
-    selectedLang.classList.remove(otherLang);
-    selectedLang.classList.add(lang); // 'it' or 'en'
-
-    nonSelectedLang.href = `/${otherLang}`;
-    nonSelectedLang.className = otherLang;
-  }, "100");
+      if (optionLang === lang) {
+        option.classList.add("selected-lang");
+        // Disable link and animation for selected lang
+        option.classList.remove("underline-animation");
+        option.removeAttribute("href");
+      } else {
+        option.classList.remove("selected-lang");
+        // Ensure link points to the alternative lang
+        option.href = `/${optionLang}`;
+      }
+    });
+  }, 1000);
 };

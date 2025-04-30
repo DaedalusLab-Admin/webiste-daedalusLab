@@ -16,8 +16,8 @@
 @import url("utils/animations/fancyButton.css");
 
 /* Header */
-@import url("header/branding.css");
-@import url("header/brandingLanguages.css");
+@import url("header/global.css");
+@import url("header/language.css");
 
 /* Main */
 @import url("main/navigation.css");
@@ -29,6 +29,6 @@
 
 /* Footer */
 @import url("footer/global.css");
-@import url("footer/footerBranding.css");
+@import url("footer/branding.css");
 @import url("footer/contactUs.css");
 @import url("footer/subfooter.css");

@@ -16,7 +16,7 @@ export const HTML_SECTIONS = {
   certifications: "html/main/certifications.html",
   researchAndDevelopment: "html/main/researchAndDevelopment.html",
 
-  footerBranding: "html/footer/footerBranding.html",
+  footerBranding: "html/footer/branding.html",
   contactUs: "html/footer/contactUs.html",
   subFooter: "html/footer/subFooter.html",
 };

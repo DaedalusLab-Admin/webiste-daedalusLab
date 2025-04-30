@@ -1,0 +1,26 @@
+.language {
+  font-size: 1.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.language > div {
+  min-width: 6em;
+}
+
+.language > span {
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.language a {
+  text-decoration: none;
+}
+
+.selected-lang {
+  font-weight: bold;
+  color: #079d04;
+}
