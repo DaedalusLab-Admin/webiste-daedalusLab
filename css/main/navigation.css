@@ -52,7 +52,7 @@
 }
 
 /* Responsiveness */
-.burger {
+#burger {
   display: none;
   flex-direction: column;
   justify-content: space-around;
@@ -78,7 +78,7 @@
 
 /* Show burger on small screens */
 @media (max-width: 1220px) {
-  .burger {
+  #burger {
     display: flex;
   }
 
