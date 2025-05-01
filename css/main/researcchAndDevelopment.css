@@ -6,7 +6,7 @@
 
 #researchAndDevelopment img {
   aspect-ratio: 1/1;
-  width: 30%;
+  width: 20%;
 
   background: white;
   border-radius: 120px;
@@ -19,5 +19,9 @@
 @media (max-width: 640px) {
   #researchAndDevelopment .section-body > p {
     width: 100%;
+  }
+  #researchAndDevelopment img {
+    padding: 0px;
+    border-radius: 10px;
   }
 }

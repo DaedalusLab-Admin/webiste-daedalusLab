@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#! In case of errors, add you IP to Aruba allowed IPs from aruba control panel
 # --- CONFIGURATION ---
 HOST="ftp.daedaluslab.it"
 USER="18098417@aruba.it"

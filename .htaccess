@@ -4,7 +4,13 @@ RewriteEngine On
 RewriteRule ^(en|it)?$ index.html [L]
 
 # Rewrite for privacy policy
-RewriteRule ^privacy-policy$ html/legal/privacyPolicy.html [L]
+RewriteRule ^privacy-policy$ legal/privacyPolicy.html [L]
 
 # Rewrite for terms and conditions
-RewriteRule ^terms-and-conditions$ html/legal/termsAndConditions.html [L]
+RewriteRule ^terms-and-conditions$ legal/termsAndConditions.html [L]
+
+# Rewrite for sitemap.xml
+RewriteRule ^sitemap.xml$ legal/sitemap.xml [L]
+
+# Rewrite for robots.txt
+RewriteRule ^robots.txt$ legal/robots.txt [L]
