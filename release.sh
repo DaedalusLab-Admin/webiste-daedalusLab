@@ -33,7 +33,7 @@ cls -1 | while read item; do
     fi
 done
 
-# Upload local contents (recursively), excluding the script itself
+# Upload local contents (recursively), excluding some files/folders
 echo "Uploading files from local folder..."
 mirror -R --exclude-glob "$SCRIPT_NAME" --exclude-glob ".git*" ./ "$REMOTE_DIR"
 
