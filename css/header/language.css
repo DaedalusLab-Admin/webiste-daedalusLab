@@ -11,11 +11,6 @@
   min-width: 6em;
 }
 
-.language > span {
-  font-weight: bold;
-  margin-right: 1em;
-}
-
 .language a {
   text-decoration: none;
 }

@@ -1,2 +1,10 @@
 RewriteEngine On
+
+# Default index rule
 RewriteRule ^(en|it)?$ index.html [L]
+
+# Rewrite for privacy policy
+RewriteRule ^privacy-policy$ html/legal/privacyPolicy.html [L]
+
+# Rewrite for terms and conditions
+RewriteRule ^terms-and-conditions$ html/legal/termsAndConditions.html [L]

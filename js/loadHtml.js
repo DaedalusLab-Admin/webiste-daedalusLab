@@ -1,4 +1,4 @@
-import { HTML_SECTIONS, HTML_CONTENT } from "./resources/htmlMaps.js";
+import { HTML_SECTIONS, HTML_CONTENT } from "./htmlMaps.js";
 
 /**
  * Loads an external HTML file into a target element by fetching the file
@@ -56,8 +56,13 @@ function updateContentFromJSON(contentData) {
         value = value[key];
       }
 
-      // Set the content of the element
-      element.innerHTML = value;
+      if (Array.isArray(value)) {
+        // If value is an array and join with <br/><br/>
+        element.innerHTML = value.join("<br/><br/>");
+      } else {
+        // Set the content of the element
+        element.innerHTML = value;
+      }
     }
   }
 }

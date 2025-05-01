@@ -1,37 +1,43 @@
 {
   "about": {
     "title": "ABOUT US",
-    "content": "DaedalusLab was born from the belief that technology should be a driver of progress—but never at the expense of the environment. Our goal is to help developers and companies build a more sustainable, efficient, and balanced digital ecosystem.<br/><br/>We design and develop eco-friendly software throughout the entire lifecycle — from code writing to deployment — also offering innovative tools to improve digital performance in a safe and responsible way."
+    "content": [
+      "DaedalusLab was born from the conviction that technology should be a driver of progress, but never at the expense of the environment. Our goal is to assist developers and businesses in creating a more sustainable and efficient digital ecosystem.",
+      "We design and develop eco-friendly software throughout its entire lifecycle, from code writing to production deployment, also providing innovative tools to responsibly and securely enhance digital performance."
+    ]
   },
   "services": {
     "title": "SERVICES",
     "subtitle": "Eco Digital Innovation",
-    "content": "We help businesses and development teams create high-efficiency software with low environmental impact. Every line of code counts: that’s why we optimize the entire development cycle with sustainability in mind.",
+    "content": "We help companies and development teams create efficient software without a significant environmental impact. Since every line of code is important, we sustainably optimize the entire development cycle.",
     "greenSoftware": {
       "title": "GREEN SOFTWARE",
-      "content": "We place sustainability at the core of every project. We build software solutions optimized for energy efficiency — from websites and mobile apps to management systems and corporate CRMs."
+      "content": "We place sustainability at the core of every project. We create software solutions optimized for energy savings, from websites to apps to management systems, corporate CRMs, and tailor-made solutions."
     },
     "cloud": {
       "title": "CLOUD",
-      "content": "We provide specialized consulting for the design, development, and optimization of cloud infrastructures. We address architecture, costs, performance, and sustainability of both existing and in-development solutions."
+      "content": "We offer specialized consulting for the design, development, and optimization of cloud infrastructures. We intervene on the architecture, costs, performance, and sustainability of existing or in-development solutions."
     },
     "mobileWeb": {
       "title": "MOBILE & WEB",
-      "content": "We develop web platforms and native apps for iOS and Android with high performance, scalability, and minimal resource consumption. We use modern technologies to deliver fast, secure, and sustainable products."
+      "content": "We develop web platforms and applications for iOS and Android that have a high level of scalability, high performance, and low resource consumption. We use advanced technologies to offer fast, secure, and sustainable products."
     }
   },
   "certifications": {
     "title": "CERTIFICATIONS",
-    "content": "We continuously invest in the training and certification of our team. This enables us to adopt the best available technologies and ensure high standards of quality, security, and sustainability."
+    "content": "We constantly invest in the training and certification of our team. This allows us to ensure high standards of quality, safety, and sustainability, and enables us to adopt the best available technologies."
   },
   "rnd": {
     "title": "R&D",
     "subtitle": "CYBERLEAF",
-    "content": "Cyberleaf is our software development initiative. A modular tool that helps developers and companies analyze their code to optimize it by reducing its energy impact.<br/><br/>With CyberLeaf, sustainability becomes an integral part of the development cycle, improving performance, reducing costs, and promoting conscious and responsible software development.",
+    "content": [
+      "Cyberleaf is our initiative for software development. A modular tool that helps developers and companies analyze their code in order to optimize it by reducing its energy impact.",
+      "With CyberLeaf, sustainability becomes an integral part of the software development cycle, improving performance, reducing costs, and promoting more conscious and responsible development."
+    ],
     "link": "Discover CyberLeaf"
   },
   "contacts": {
     "title": "CONTACTS",
-    "content": "The DaedalusLab team is ready to hear from you. Get in touch and let’s start building your solution together."
+    "content": "The DaedalusLab team is available to listen to you. Contact us and let's start building your idea together."
   }
 }
