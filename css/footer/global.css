@@ -6,6 +6,11 @@ footer > div {
   font-size: 1.3em;
 }
 
+footer > div:first-of-type {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
 /* Footer branding width*/
 #footerBranding .logo {
   width: 11%;
