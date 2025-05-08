@@ -1,11 +1,11 @@
 .language {
-  font-size: 2em;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   flex-wrap: nowrap;
+  font-size: 2em;
+  height: 100%;
+  gap: 0.3em;
 }
 
 .language > .language a {

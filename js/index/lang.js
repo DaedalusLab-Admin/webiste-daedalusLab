@@ -37,8 +37,10 @@ export function getLanguageFromPath() {
  * @param {string} currentLang - The language currently selected
  */
 export function setLanguage(currentLang) {
-  const langOptions = document.querySelectorAll(".lang-option");
+  // Update the lang attribute in the <html> tag
+  document.documentElement.lang = currentLang;
 
+  const langOptions = document.querySelectorAll(".lang-option");
   langOptions.forEach((option) => {
     const optionLang = option.classList.contains("it") ? "it" : "en";
     const isSelected = optionLang === currentLang;
@@ -50,7 +52,14 @@ export function setLanguage(currentLang) {
     if (isSelected) {
       option.removeAttribute("href");
     } else {
-      option.href = `/${optionLang}`;
+      // Replace 'it' or 'en' in the href with the optionLang based on the current language
+      option.href = option.href.replace(/\/(en|it)\//, `/${currentLang}/`);
     }
+  });
+
+  const langRefs = document.querySelectorAll(".lang-ref");
+  langRefs.forEach((ref) => {
+    // Replace 'it' or 'en' in the href with the optionLang based on the current language
+    ref.href = ref.href.replace(/\/(en|it)\//, `/${currentLang}/`);
   });
 }

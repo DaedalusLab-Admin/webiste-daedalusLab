@@ -1,5 +1,3 @@
-import { HTML_SECTIONS, HTML_CONTENT } from "./htmlMaps.js";
-
 /**
  * Loads an external HTML file into a target element by fetching the file
  * and inserting its content into the specified element in the DOM.
@@ -29,22 +27,22 @@ function loadHTML(targetId, filePath) {
 /**
  * Loads multiple HTML files into their respective target elements in the DOM.
  */
-export function loadAllHTMLSections() {
-  for (const [targetId, filePath] of Object.entries(HTML_SECTIONS)) {
+export function loadAllHTMLSections(htmlSections) {
+  for (const [targetId, filePath] of Object.entries(htmlSections)) {
     loadHTML(targetId, filePath); // Load each HTML section into the DOM
   }
 }
 
 /**
  * Updates the content of DOM elements dynamically by accessing data in the
- * provided JSON object based on the mapping in 'HTML_CONTENT'
+ * provided JSON object based on the mapping in htmlContent
  *
  * @param {Object} contentData - The JSON data object that contains the dynamic
  * content.
  */
-function updateContentFromJSON(contentData) {
+function updateContentFromJSON(contentData, htmlContent) {
   // Iterate over the mapping to update elements
-  for (const [id, path] of Object.entries(HTML_CONTENT)) {
+  for (const [id, path] of Object.entries(htmlContent)) {
     const element = document.getElementById(id);
     if (element) {
       // Traverse the nested path to access the content in contentData
@@ -73,7 +71,8 @@ function updateContentFromJSON(contentData) {
  *
  * @param {string} jsonFilePath - The path to the JSON file
  */
-export function loadJSONAndUpdateContent(jsonFilePath) {
+export function loadJSONAndUpdateContent(jsonFilePath, htmlContent) {
+  console.log(jsonFilePath);
   fetch(jsonFilePath)
     .then((response) => {
       // Check if the JSON file was successfully loaded
@@ -83,7 +82,7 @@ export function loadJSONAndUpdateContent(jsonFilePath) {
       // Parse the response as JSON
       return response.json();
     })
-    .then((data) => updateContentFromJSON(data, HTML_CONTENT)) // Update content with JSON data
+    .then((data) => updateContentFromJSON(data, htmlContent)) // Update content with JSON data
     .catch((error) => {
       console.error("Error loading or processing the JSON file:", error);
     });

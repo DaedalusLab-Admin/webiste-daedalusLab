@@ -39,5 +39,100 @@
   "contacts": {
     "title": "CONTACTS",
     "content": "The DaedalusLab team is available to listen to you. Contact us and let's start building your idea together."
+  },
+  "legal": {
+    "legalInfo": {
+      "title": "COMPANY INFORMATION",
+      "foundation": {
+        "datePlace": {
+          "label": "Date and Place of Incorporation:",
+          "value": "07/04/2025 at Via del Maglio 6, 05100 Terni (TR)"
+        },
+        "notary": {
+          "label": "Notary:",
+          "value": "Gabriella Iannotta, Via G. Petroni 12, 05100 Terni (TR)"
+        },
+        "headquarters": {
+          "label": "Headquarters:",
+          "value": "Via del Maglio 6, 05100 Terni (TR)"
+        }
+      },
+      "objectives": {
+        "title": "Corporate Purpose",
+        "intro": "The company’s objectives include:",
+        "list": [
+          "Activities focused on the development, production, and commercialization of innovative, high-tech products or services, particularly eco-friendly software for environmental sustainability.",
+          "Development and creation of technological products for the research of innovative ideas, also in collaboration with universities.",
+          "Software development and IT consultancy (customized, management, video games, AI, security, cloud, IoT, blockchain, etc.).",
+          "Consulting in marketing, communication, digital content, and business strategies.",
+          "Business support services (document storage, secretarial, reception, etc.)."
+        ],
+        "extra": "The company may also engage in instrumental operations, participate in community programs, and acquire stakes in other related companies."
+      },
+      "rnd": {
+        "title": "Research and Development",
+        "activity": "Development of eco-friendly software and an innovative machine learning model to improve software efficiency and reduce energy impact.",
+        "expensesTitle": "Expenses in the first fiscal year:",
+        "expensesList": [
+          "A. Production costs: approx. €50,000",
+          "B. Value of production: approx. €75,000",
+          "C. Basic research costs: not foreseen",
+          "D. Applied research and development costs: included in item E",
+          "E. Competitive/pre-competitive development: at least €20,000",
+          "F. Incubator expenses: not included",
+          "G. Personnel and collaborators' costs: approx. €20,000",
+          "H. Legal expenses for IP: under definition"
+        ],
+        "conclusion": "R&D expenses will be more than 15% of the higher value between cost and value of production. The activity will focus on ML models for energy markets."
+      },
+      "members": {
+        "title": "Members",
+        "serilli": {
+          "name": "Serilli Leonardo",
+          "items": [
+            "2017: High School Diploma in Scientific Studies - Rieti (IT)",
+            "2017–2020: Bachelor's degree in Computer Science – University of L'Aquila (IT)",
+            "2020–2021: Master's degree in ubiquitous design and distributed systems - University of L'Aquila",
+            "2021–2022: Master's in ubiquitous networking – Côte d’Azur University (FR)",
+            "2022: Internship at INRIA – Nice (FR)",
+            "2023–2025: Consultant at Inetum – Nice (FR)",
+            "2023–2025: Developer at Amadeus – Nice (FR)"
+          ]
+        },
+        "formichetti": {
+          "name": "Formichetti Andrea",
+          "items": [
+            "High School Diploma in Scientific Studies",
+            "Programmer Analyst since April 14, 2020"
+          ]
+        },
+        "tulli": {
+          "name": "Tulli Alessandro",
+          "items": [
+            "High School Diploma in Scientific Studies",
+            "Freelance administrative consultant since 2020"
+          ]
+        }
+      },
+      "additional": {
+        "title": "Additional Information",
+        "participatedCompanies": {
+          "label": "List of Participated Companies:",
+          "value": "none"
+        },
+        "professionalRelations": {
+          "label": "Professional Relationships and Collaborations:",
+          "value": "none"
+        },
+        "lastFinancialReport": {
+          "label": "Last Filed Financial Statement:",
+          "value": "not available"
+        },
+        "ipRights": {
+          "label": "Intellectual Property Rights:",
+          "value": "daedaluslab.it"
+        }
+      }
+    }
   }
 }

@@ -1,43 +1,138 @@
 {
   "about": {
-    "title": "CHI SIAMO",
+    "title": "ABOUT US",
     "content": [
-      "DaedalusLab nasce dalla convinzione che la tecnologia debba essere un motore di progresso, ma mai a discapito dell’ambiente. Il nostro obiettivo è assistere gli sviluppatori e le imprese a creare un ecosistema digitale più sostenibile ed efficiente.",
-      "Progettiamo e realizziamo software eco-compatibili lungo tutto il ciclo di vita, dalla scrittura del codice alla messa in produzione, fornendo anche strumenti innovativi per migliorare in modo responsabile e sicuro le prestazioni digitali."
+      "DaedalusLab was born from the belief that technology should be a driver of progress, but never at the expense of the environment. Our goal is to assist developers and businesses in creating a more sustainable and efficient digital ecosystem.",
+      "We design and create eco-friendly software throughout its entire life cycle, from writing the code to production deployment, also providing innovative tools to responsibly and securely improve digital performance."
     ]
   },
   "services": {
-    "title": "SERVIZI",
-    "subtitle": "Eco Innovazione Digitale",
-    "content": "Aiutiamo aziende e team di sviluppo a creare software efficente senza un significativo impatto ambientale. Poiché ogni riga di codice è importante, ottimizziamo in modo sostenibile l’intero ciclo di sviluppo.",
+    "title": "SERVICES",
+    "subtitle": "Eco Digital Innovation",
+    "content": "We help businesses and development teams create efficient software with minimal environmental impact. Since every line of code matters, we sustainably optimize the entire development cycle.",
     "greenSoftware": {
       "title": "GREEN SOFTWARE",
-      "content": "Mettiamo la sostenibilità alla base di ogni progetto. Realizziamo soluzioni software ottimizzate per il risparmio energetico, dai siti web alle app fino a sistemi gestionali, CRM aziendali e soluzioni su misura."
+      "content": "We base every project on sustainability. We create software solutions optimized for energy savings, from websites to apps, to management systems, corporate CRMs, and tailored solutions."
     },
     "cloud": {
       "title": "CLOUD",
-      "content": "Offriamo consulenza specializzata per la progettazione, lo sviluppo e l’ottimizzazione di infrastrutture cloud. Interveniamo sull'architettura, sui costi, sulle prestazioni e sulla sostenibilità di soluzioni esistenti o in fase di sviluppo."
+      "content": "We offer specialized consulting for designing, developing, and optimizing cloud infrastructures. We intervene on architecture, costs, performance, and sustainability of existing or developing solutions."
     },
     "mobileWeb": {
       "title": "MOBILE & WEB",
-      "content": "Sviluppiamo piattaforme web e applicazioni per iOS e Android che abbiano un alto livello di scalabilità, alte prestazioni e un basso consumo di risorse. Utilizziamo tecnologie avanzate per offrire prodotti rapidi, sicuri e sostenibili."
+      "content": "We develop web platforms and applications for iOS and Android with high scalability, performance, and low resource consumption. We use advanced technologies to offer fast, secure, and sustainable products."
     }
   },
   "certifications": {
-    "title": "CERTIFICAZIONI",
-    "content": "Investiamo costantemente nella formazione e certificazione del nostro team. Ciò ci consente di garantire standard elevati di qualità, sicurezza e sostenibilità e ci consente di adottare le migliori tecnologie disponibili."
+    "title": "CERTIFICATIONS",
+    "content": "We constantly invest in the training and certification of our team. This allows us to ensure high standards of quality, security, and sustainability, and to adopt the best technologies available."
   },
   "rnd": {
     "title": "R&D",
     "subtitle": "CYBERLEAF",
     "content": [
-      "Cyberleaf è la nostra iniziativa open-source per lo sviluppo software. Uno strumento modulare che aiuta sviluppatori e aziende ad analizzare il proprio codice, al fine di ottimizzarlo riducendone l'impatto energetico.",
-      "Con CyberLeaf, la sostenibilità diventa parte integrante del ciclo di sviluppo software, migliorandone le prestazione, riducendone i costi e promuovendo uno sviluppo più consapevole e responsabile."
+      "Cyberleaf is our open-source initiative for software development. A modular tool that helps developers and businesses analyze their code to optimize it by reducing its energy impact.",
+      "With CyberLeaf, sustainability becomes an integral part of the software development cycle, improving performance, reducing costs, and promoting more conscious and responsible development."
     ],
-    "link": "Scopri CyberLeaf"
+    "link": "Discover CyberLeaf"
   },
   "contacts": {
-    "title": "CONTATTI",
-    "content": "Il team di DaedalusLab è disponibile ad ascoltarti. Contattaci e iniziamo a costruire insieme la tua idea."
+    "title": "CONTACT US",
+    "content": "The DaedalusLab team is available to listen to you. Contact us, and let's start building your idea together."
+  },
+  "legal": {
+    "legalInfo": {
+      "title": "INFORMAZIONI SOCIETÀ",
+      "foundation": {
+        "datePlace": {
+          "label": "Data e Luogo di Costituzione:",
+          "value": "07/04/2025 in Via del Maglio 6, 05100 Terni (TR)"
+        },
+        "notary": {
+          "label": "Notaio:",
+          "value": "Gabriella Iannotta, Via G. Petroni 12, 05100 Terni (TR)"
+        },
+        "headquarters": {
+          "label": "Sede:",
+          "value": "Via del Maglio 6, 05100 Terni (TR)"
+        }
+      },
+      "objectives": {
+        "title": "Oggetto sociale",
+        "intro": "La società ha per oggetto l'attività di:",
+        "list": [
+          "Attività orientate allo sviluppo, produzione e commercializzazione di prodotti o servizi innovativi ad alto valore tecnologico, in particolare software eco-compatibili per la sostenibilità ambientale.",
+          "Sviluppo e ideazione di prodotti tecnologici per la ricerca di idee innovative, anche in collaborazione con università.",
+          "Sviluppo software e consulenza informatica (personalizzati, gestionali, videogiochi, AI, sicurezza, cloud, IoT, blockchain ecc.).",
+          "Consulenza in marketing, comunicazione, contenuti digitali e strategie aziendali.",
+          "Servizi di supporto alle imprese (archiviazione documenti, segreteria, reception ecc.)."
+        ],
+        "extra": "La società potrà inoltre compiere operazioni strumentali, partecipare a programmi comunitari e assumere partecipazioni in altre società affini."
+      },
+      "rnd": {
+        "title": "Ricerca e sviluppo",
+        "activity": "Sviluppo di software eco-compatibili e di un modello innovativo di machine learning per migliorare l’efficienza del software e ridurre l’impatto energetico.",
+        "expensesTitle": "Voci di spesa nel primo esercizio:",
+        "expensesList": [
+          "A. Costo della produzione: € 50.000 circa",
+          "B. Valore della produzione: € 75.000 circa",
+          "C. Costi di ricerca base: non previsti",
+          "D. Costi di ricerca applicata e sviluppo: inclusi nella voce E",
+          "E. Sviluppo competitivo/pre-competitivo: € 20.000 almeno",
+          "F. Spese per incubatori: non inclusi",
+          "G. Costi personale e collaboratori: € 20.000 circa",
+          "H. Spese legali privativa: in via di definizione"
+        ],
+        "conclusion": "Le spese di R&S saranno superiori al 15% del maggiore tra costo e valore della produzione. L’attività sarà orientata a modelli ML per mercati energetici."
+      },
+      "members": {
+        "title": "Soci",
+        "serilli": {
+          "name": "Serilli Leonardo",
+          "items": [
+            "2017: Diploma di maturità scientifica - Rieti (IT)",
+            "2017–2020: Laurea in Informatica – Università dell'Aquila (IT)",
+            "2020–2021: Laurea Magistrale in ubiquitous design and distributed systems - Università dell'Aquila",
+            "2021–2022: Master in ubiquitous networking – Côte d’Azur University (FR)",
+            "2022: Internship presso INRIA – Nizza (FR)",
+            "2023–2025: consulente presso Inetum – Nizza (FR)",
+            "2023–2025: sviluppatore presso Amadeus – Nizza (FR)"
+          ]
+        },
+        "formichetti": {
+          "name": "Formichetti Andrea",
+          "items": [
+            "Diploma di maturità scientifica",
+            "Analista programmatore dal 14 aprile 2020"
+          ]
+        },
+        "tulli": {
+          "name": "Tulli Alessandro",
+          "items": [
+            "Diploma di maturità scientifica",
+            "Libero professionista consulente amministrativo dal 2020"
+          ]
+        }
+      },
+      "additional": {
+        "title": "Informazioni aggiuntive",
+        "participatedCompanies": {
+          "label": "Elenco società partecipate:",
+          "value": "nessuna"
+        },
+        "professionalRelations": {
+          "label": "Relazioni professionali e collaborazioni:",
+          "value": "nessuna"
+        },
+        "lastFinancialReport": {
+          "label": "Ultimo bilancio depositato:",
+          "value": "non presente"
+        },
+        "ipRights": {
+          "label": "Diritti di privativa:",
+          "value": "daedaluslab.it"
+        }
+      }
+    }
   }
 }
