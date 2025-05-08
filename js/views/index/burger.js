@@ -15,7 +15,6 @@ export function initializeBurgerNavigation() {
 
   // Toggle the active class of the navigation when burger is clicked
   burger.addEventListener("click", (e) => {
-    console.log("SADSA");
     e.stopPropagation();
     navigation.classList.toggle("active");
   });

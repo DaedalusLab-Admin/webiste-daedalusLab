@@ -9,11 +9,21 @@ function getBrowserLanguage() {
 }
 
 /**
- * Redirects the user to the language path based on browser settings
+ * Redirects the user to the language path based on browser settings, preserving the current path
  */
 function redirectToDefaultLanguage() {
   const defaultLang = getBrowserLanguage();
-  window.location.replace(`/${defaultLang}`);
+  const currentPath = window.location.pathname;
+
+  // Remove the language prefix if it exists
+  const pathWithoutLangPrefix = currentPath.replace(/^\/(en|it)\//, "/");
+
+  // Redirect to the new path with the appropriate language prefix
+  if (currentPath === "/") {
+    window.location.replace(`/${defaultLang}`);
+    return;
+  }
+  window.location.replace(`/${defaultLang}${pathWithoutLangPrefix}`);
 }
 
 /**
@@ -37,9 +47,6 @@ export function getLanguageFromPath() {
  * @param {string} currentLang - The language currently selected
  */
 export function setLanguage(currentLang) {
-  // Update the lang attribute in the <html> tag
-  document.documentElement.lang = currentLang;
-
   const langOptions = document.querySelectorAll(".lang-option");
   langOptions.forEach((option) => {
     const optionLang = option.classList.contains("it") ? "it" : "en";

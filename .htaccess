@@ -3,6 +3,8 @@ RewriteEngine On
 # Default index rule
 RewriteRule ^(en|it)?$ index.html [L]
 
+# Allow for /legal-info without a language prefix
+RewriteRule ^legal-info$ /legal/legalInfo.html [L]
 # Rewrite for legal info with optional language prefix
 RewriteRule ^(en|it)/legal-info$ /legal/legalInfo.html [L]
 

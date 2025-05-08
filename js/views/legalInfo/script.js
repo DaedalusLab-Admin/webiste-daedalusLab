@@ -1,6 +1,6 @@
-import { loadJSONAndUpdateContent } from "./index/loadHtml.js";
-import { getLanguageFromPath, setLanguage } from "./index/lang.js";
-import { HTML_CONTENT_LEGAL } from "./commons/htmlMaps.js";
+import { loadJSONAndUpdateContent } from "../index/loadHtml.js";
+import { getLanguageFromPath } from "../../commons/lang.js";
+import { HTML_CONTENT_LEGAL } from "../../commons/htmlMaps.js";
 
 // Run on window load
 window.onload = () => {

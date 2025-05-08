@@ -72,7 +72,6 @@ function updateContentFromJSON(contentData, htmlContent) {
  * @param {string} jsonFilePath - The path to the JSON file
  */
 export function loadJSONAndUpdateContent(jsonFilePath, htmlContent) {
-  console.log(jsonFilePath);
   fetch(jsonFilePath)
     .then((response) => {
       // Check if the JSON file was successfully loaded

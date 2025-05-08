@@ -2,31 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.daedaluslab.it/</loc>
-        <lastmod>2025-05-01</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2025-05-8</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.daedaluslab.it/it</loc>
-        <lastmod>2025-05-01</lastmod>
+        <lastmod>2025-05-8</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.daedaluslab.it/en</loc>
-        <lastmod>2025-05-01</lastmod>
+        <lastmod>2025-05-8</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+        <url>
+        <loc>https://www.daedaluslab.it/legal-info</loc>
+        <lastmod>2025-05-8</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.daedaluslab.it/it/legal-info</loc>
+        <lastmod>2025-05-8</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+        <url>
+        <loc>https://www.daedaluslab.it/en/legal-info</loc>
+        <lastmod>2025-05-8</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
     <url>
         <loc>https://www.daedaluslab.it/privacy-policy</loc>
-        <lastmod>2025-04-30</lastmod>
+        <lastmod>2025-05-8</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://www.daedaluslab.it/terms-and-conditions</loc>
-        <lastmod>2025-04-30</lastmod>
+        <lastmod>2025-05-8</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>

@@ -1,6 +1,9 @@
 User-agent: *
-Allow: /it/
-Allow: /en/
+Allow: /it
+Allow: /en
+Allow: /legal.info
+Allow: /it/legal.info
+Allow: /en/legal.info
 Allow: /privacy-policy
 Allow: /terms-and-conditions
 Sitemap: https://www.daedaluslab.it/sitemap.xml
